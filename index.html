@@ -1,9 +1,10 @@
 <html>
 
 <head>
-    <title>JS Practice</title>
+    <title>Build Piper</title>
     <link rel="stylesheet" href="index.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                     <p>Twinkel Bhardwaj</p>    
                     <small>Super User</small>
                 </div>
-                <img src="/images/Profile.png" />
+                <img class="profile_image" src="/images/Profile.png" />
               </div>
               
               <div class="bell">
@@ -69,10 +70,11 @@
              <p class="sidebar_btn" >Step Catalogs</p>
              <p class="sidebar_btn" >Webhook Event</p>
 
-        </div>
+            </div>
+
             <div id="formSection">
 
-                <div class="heading">
+            <div class="heading">
 
                     <div class="left-heading">
                         <span class="p_logo">P</span>
@@ -91,53 +93,147 @@
                         </label>
                     </div>
 
+            </div>
+
+
+            <div id="stageSection">
+                <div class="stageSectionInner">
+                   <div class="stage">
+                        <p>STAGE 1</p>
+                        <small>Jira Ticket Creation</small>  
+                   </div>
+                   <div class="stage">
+                        <p>STAGE 2</p>
+                        <small>Integeration</small>
+                   </div>
+                   <div class="stage">
+                        <p>STAGE 3</p>
+                        <small>Build & Deploy</small>
+                   </div>    
+                   <div class="stage">
+                        <p>STAGE 4</p>
+                        <small>Jira Ticket Update</small>
+                   </div> 
+                   <div class="stage">
+                        <p>STAGE 5</p>
+                        <small>Promote</small>
+                   </div> 
+                   <div class="stage">
+                        <p>STAGE 6</p>
+                        <small>Jira Ticket Update</small>
+                   </div> 
+                   <div class="stage">
+                        <p>STAGE 7</p>
+                        <small>Jira Ticket Creation</small>
+                   </div> 
+                   <div class="stage">
+                        <p>STAGE 8</p>
+                        <small>Update & Unsolved Jira</small>
+                   </div>                                                                                                                                  
                 </div>
+            </div>
 
+            <div id="stage1_form">
+                <p>REQUIRED PARAMETERS FOR STAGE 1</p>
+                <div class="job_form">
 
-                <div id="stageSection">
+                    <p class="form_title">
+                        JOB 1 <span>JIRA</span>
+                    </p>  
 
-                </div>
-                <div id="stage1_form">
-                    <p></p>
-                    <div id="job1_form">
-                        <p></p>  
-                        <div id="form_1">
-
+                        <div class="form1">
+                           <div class="input-field">
+                               <label>Jira Ticket Type</label>
+                               <select>
+                                   <option>Jira Ticket</option> 
+                               </select>
+                           </div>
+                           <div class="input-field">
+                               <label>Jira Ticket Type</label>
+                               <select>
+                                   <option>Jira Ticket</option> 
+                               </select>
+                           </div>
+                           <div class="input-field">
+                               <label>Jira Ticket Type</label>
+                               <select>
+                                   <option>Jira Ticket</option> 
+                               </select>
+                           </div>  
+                           <div class="input-field">
+                               <label>Jira Ticket Type</label>
+                               <select>
+                                   <option>Jira Ticket</option> 
+                               </select>
+                           </div>                                                    
                         </div>
-                        <div id="form_2">
-                            <p>Add Custom Fields</p>
-                            <p>
-                                <span>Key</span>
-                                <span>Value</span>
+
+
+                        <div class="form2">
+                            <p class="form2_heading" >Add Custom Fields</p>
+                            <p class="form2_KV">
+                                <span >Key</span>
+                                <span >Value</span>
                             </p>
-                            <div>
-                                <div class="input_field">
-                                    <input type="text" />
+                            <div class="form2_fields">
+                                <div class="input_field_form2">
+                                    <input type="text" placeholder="Impact D365?" />
+                                    <img src="/images/edit_pencil.png" />
                                 </div>
 
-                                <div class="input_field">
-                                    <input type="text" />
+                                <div class="input_field_form2">
+                                    <input type="text" placeholder="Value"/>
+                                    <img src="/images/edit_pencil.png" />
                                 </div>
 
-                                <div class="input_field">
-                                    <input type="text" />
+                                <div class="delete_icon">
+                                    <img src="/images/delete.svg" />
                                 </div>
 
-                                <div class="input_field">
-                                    <input type="text" />
+                                <div class="input_field_form2">
+                                    <input type="text" placeholder="Ticket Catagory" />
+                                    <img src="/images/edit_pencil.png" />
                                 </div>
 
-                                <div class="input_field">
-                                    <input type="text" />
+                                <div class="input_field_form2">
+                                    <input type="text" placeholder="Adhoc" />
+                                    <img src="/images/edit_pencil.png" />
                                 </div>
 
-                                <div class="input_field">
-                                    <input type="text" />
+                                <div class="delete_icon">
+                                    <img src="/images/delete.svg" />
                                 </div>
+
+                                <div class="input_field_form2">
+                                    <input type="text" placeholder="D365 Changes Validated?" />
+                                    <img src="/images/edit_pencil.png"  />
+                                </div>
+
+                                <div class="input_field_form2">
+                                    <input type="text" placeholder="No" />
+                                    <img src="/images/edit_pencil.png" />
+                                </div>
+
+                                <div class="delete_icon">
+                                    <img src="/images/delete.svg" />
+                                </div>
+
                             </div>    
+                            <div class="addAnother">
+                                  
+                                 <p>+ ADD ANOTHER</p>
+                            </div>
                         </div> 
+                        
+                        <div class="submitBtns">
+                            <input type="button" value="BACK" />          
+                            <input type="button" value="SAVE & NEXT" />
+                            <input type="button" value="SAVE & RUN PIPELINE" />
+                        </div>
+
                     </div> 
-                </div> 
+            </div> 
+
             </div>  
         </main>
 </body>

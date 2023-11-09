@@ -8,49 +8,78 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 
 
-main {
-    display: flex;
-    width: 100%;
-}
 
 nav{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 21 20 21 52; 
+    padding: 16 20 16 52; 
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+}
+
+.logo_piper{
+    margin-top: 1rem;
 }
 
 .right-section {
-    width: 33%;
+    width: 35%;
     display: flex;
 }
 
 
 .right-section .user_info{
-    background-color: rgb(219, 219, 219);
+    background-color:  rgba(241, 243, 247, 1);
     width: 80%;
     display: flex;
     justify-content: space-between;
-    padding: 2px;
+    padding: 0.3rem;
     border-radius: 5px;
+    border-top-right-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+}
+.user_info > img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .info{
     padding-top: 8px;
 }
+.profile_image{
+    border-radius: 5rem;
+}
 
 .bell{
     padding: 10px;
+    padding-top: 16px;
 }
 
+
+/* Second section styling start  */
+
+main
+{
+    margin-top: 6.3%;
+    display: inline-block;
+    width: 100%;
+    height: max-content; 
+    overflow: hidden;
+}
+
+
+
 .sidebar {
+    position: fixed;
+    display: inline-block;
     background-color: rgba(18, 77, 155, 1);
     padding: 16px;
-    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
     width: 20%;
 }
 
@@ -132,8 +161,10 @@ nav{
 /* right side form container */
 
 #formSection {
+    display: inline-block;
     width: 80%;
-    height: 100vh;
+    margin-left: 20%;
+    height: max-content;
 }
 
 .heading {
@@ -141,6 +172,7 @@ nav{
     display:  flex;
     width: 100%;
     justify-content: space-between;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .left-heading{
@@ -180,14 +212,298 @@ nav{
     border-radius: 5px;
 }
 
-.swich-btn{
+
+
+#stageSection
+{
+    width: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#stageSection::-webkit-scrollbar {
+    display: none;
+}
+
+.stageSectionInner{
     display: flex;
-    justify-content: space-between;
-    width: 25%;
+    width: max-content;
+}
+
+.stage{
+    width: 11rem;
+    padding: 12px 0 12px 0;  
+    text-align: center;  
+    border: 3px solid white;
+}
+
+.stage p{
+color: #797979;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+
+.stage small{
+        color: #2F2F2F;
+        font-size: 12px;
+        font-family: Montserrat;
+        font-weight: 400;
+        word-wrap: break-word
 }
 
 
+.stage:hover{
+    border-bottom: 3px solid var(--primary);
+    cursor: pointer;
+}
+
+
+
+/* form section */
+
+.form_title{
+    width: 100%;
+    background-image: linear-gradient(rgba(252, 246, 225, 1), rgba(253, 253, 253, 1));
+    padding: 1rem;
+    color: #2F2F2F;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+
+.form_title span {
+    color: #FEA111;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+
+
+#stage1_form > p 
+{
+    padding: 1.5%;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+
+.job_form{
+    width: 97%;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form1{
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 0.5rem;
+    color: #2F2F2F;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.input-field > label{
+     margin-bottom: 0.3rem;
+}
+
+.input-field > select{
+   padding: 0.4rem;
+   border-radius: 0.3rem;
+   outline: none;
+   border-color: var(--textColor);
+}
+
+
+/* form  */
+
+.form2 {
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 0.5rem;
+    width: 97%;
+    margin: auto;
+}
+
+.form2_heading{
+    padding: 0.5rem;
+    color: #000000;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+
+.form2_KV{
+    display: grid;
+    border-top: 2px solid rgb(222, 222, 222);
+    border-bottom: 2px solid rgb(222, 222, 222);
+    padding: 0.3rem;
+    background-color: rgb(241, 252, 255);
+    grid-template-columns: 1fr 1fr;
+    color: black;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+
+.form2_fields{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.input_field_form2{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 0.3rem;
+}
+
+.input_field_form2 input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 0.3rem;
+}
+
+.input_field_form2 img{
+    position: absolute;
+    right: 5%;
+    top:25%;
+
+}
+
+.delete_icon{
+    padding: 0.2rem;
+    border: 2px solid rgb(222, 222, 222);
+    margin:0.5rem;
+    text-align: center;
+        border-radius: 0.3rem;
+}
+
+.delete_icon:hover{
+    background-color: red;
+    color: white;
+}
+
+.addAnother{
+    padding: 0.7rem;
+    display: flex;
+   justify-content: flex-end;
+    color: #0086FF;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+
+.addAnother p:hover
+{
+   border-bottom: 1px solid #0086FF;   
+}
+
+.submitBtns{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap:1rem;
+}
+
+.submitBtns input[value="BACK"]{
+    border: 2px solid rgba(211, 211, 211, 1);
+    color: rgba(211, 211, 211, 1);
+    padding: 0.8rem;   
+    border-radius: 0.3rem;
+}
+
+.submitBtns input[value="SAVE & NEXT"]{
+        background-color: rgba(0, 134, 255, 1);
+        color: white;
+        font-size: 12px;
+        font-family: Montserrat;
+        font-weight: 600;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        border:0;
+        padding: 0.8rem;
+        border-radius: 0.3rem;
+}
+
+.submitBtns input[value="SAVE & NEXT"]:hover{
+    background-color: rgb(0, 67, 126);
+}
+
+.submitBtns input[value="SAVE & RUN PIPELINE"] {
+    background-color: rgba(254, 161, 17, 1);
+    color: white;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+}
+
+.submitBtns input[value="SAVE & RUN PIPELINE"]:hover {
+    background-color: rgb(162, 97, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* switch btn */
+
+.swich-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding-top: 0.7rem;
+}
+
 
 .switch-left-right .switch-label {
     overflow: hidden;
@@ -234,6 +550,10 @@ nav{
 .switch-left-right .switch-input:checked~.switch-label {
     background: inherit;
 }
+
+
+
+
 
 
 
